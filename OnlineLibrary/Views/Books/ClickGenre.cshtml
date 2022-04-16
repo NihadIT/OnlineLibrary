@@ -1,0 +1,13 @@
+﻿@model IEnumerable<OnlineLibrary.Models.Books>
+<!-- books of a certain genre should appear here -->
+
+@foreach (var book in Model)
+{
+<div class="img-block-title">
+    <a href="/Books/ClickCover/@book.IdBook"><img class="image-title" src="@book.Url" /></a>
+    <h6>
+        @book.Name
+    </h6>
+</div>
+}
+

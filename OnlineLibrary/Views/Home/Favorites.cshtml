@@ -1,0 +1,31 @@
+﻿@model IEnumerable<OnlineLibrary.Models.Books>
+
+@{
+    int items = 0;
+}
+
+@foreach (var book in Model)
+{
+    @if (book.Favorites != 0)
+    {
+        <div class="img-block-title">
+            @using (Html.BeginForm("isFavorite", "Home", FormMethod.Post))
+            {
+                <input type="hidden" name="id" value=@book.IdBook />
+                <input style="background-color:red" type="submit" value="" class="icon-selected">
+            }
+            <a href="Books/ClickCover/@book.IdBook"><img class="image-title" src="@book.Url" /></a>
+            <h6>
+                @book.Name
+            </h6>
+        </div>
+         items++;
+    }
+}   
+
+@if(items == 0)
+{
+    <center><h3 style="color:white">No favorite books yet</h3></center>
+}
+
+

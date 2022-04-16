@@ -1,0 +1,13 @@
+﻿@model OnlineLibrary.Models.Books
+
+@{
+    <!-- read txt file -->
+    string path = $"wwwroot/txt/{Model.Name}.txt";
+    string[] readText = File.ReadAllLines(path);
+    <div class="read-border">
+        @foreach (string s in readText)
+        {
+         <div class="read-text-style">@s</div>
+        }
+    </div>
+}

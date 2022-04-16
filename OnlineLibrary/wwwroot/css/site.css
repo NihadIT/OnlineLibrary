@@ -1,0 +1,223 @@
+﻿header {
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #810000;
+    height: 5rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #222222;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; 
+}
+
+/*-----------------nav Header-------------------------------*/
+
+/* remove indents and margins, as well as list-style for "ul", 
+			* and add "position:relative" */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+    /* apply inline-block positioning to the navigation elements */
+    nav ul li {
+        margin: 0px -7px 0 0;
+        display: inline-block;
+    }
+
+/* styling links */
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+    /* change the background color when the cursor is moved */
+    nav a:hover {
+        background-color: #810000;
+    }
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* display the drop-down list when you hover over it */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* the first level of the drop-down list */
+nav ul ul li {
+    min-width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/*------------------------------------------------------------*/
+
+a:link, a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: DarkRed;
+}
+
+
+.genre-list {
+    font-size: 25px;
+}
+
+.center-nav {
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+.left-nav {
+    left: 30%;
+    border: 2px solid #000000;
+}
+
+.right-nav {
+    right: 30%;
+    border: 2px solid #000000;
+}
+
+.border-md div {
+    height: 0.0rem;
+    color: #232323;
+    border-bottom: 2px solid;
+    width: 40%;
+}
+
+.center-nav, .left-nav,
+.right-nav,  a:hover {
+    color: lightgray;
+    min-width: 10px;
+}
+
+.mb-7 {
+    margin-bottom: 7rem !important;
+}
+
+.img-block-title {
+    position: relative;
+    display: inline-block;
+    width: 17%;
+    text-align: center;
+    border: 2px solid black;
+    background: rgba(0, 0, 0, .05);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.image-title {
+    width: 100%;
+}
+
+.read-text-style {
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Century Gothic';
+    color: white;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.read-border {
+    background: #808080;
+    border-radius: 8px;
+    border: 5px solid rgba(255,255,255,0.7);
+    color: white;
+}
+
+.icon-selected {
+    position: absolute;
+    background-image: url("../images/icons/Icon-favorites.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 22px;
+    right: 0;
+    top: 0;
+}
+

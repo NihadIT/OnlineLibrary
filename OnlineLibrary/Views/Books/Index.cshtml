@@ -1,0 +1,8 @@
+﻿@model IEnumerable<OnlineLibrary.Models.Genre>
+    <!-- genre list -->
+    @foreach (var genre in Model)
+    {
+        <div class="genre-list">
+            <a href="Books/ClickGenre/@genre.GenreId">@genre.Name</a>
+        </div>
+    }

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<OnlineLibrary.Models.Books>
+
+@{
+    string iconColor = null;
+};
+
+@foreach (var book in Model)
+{
+     iconColor = book.Favorites == 0 ? "white" : "red";
+
+    <div class="img-block-title">
+        @using(Html.BeginForm("isFavorite", "Home", FormMethod.Post))
+        {
+          <input type="hidden" name="id" value=@book.IdBook />
+          <input style="background-color:@iconColor" type="submit" value="" class="icon-selected">
+        }
+        <a href="Books/ClickCover/@book.IdBook"><img class="image-title" src="@book.Url" /></a>
+        <h6>
+            @book.Name
+        </h6>
+    </div>
+}   
+
